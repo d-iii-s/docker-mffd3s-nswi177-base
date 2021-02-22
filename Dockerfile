@@ -1,4 +1,6 @@
 FROM fedora:33
+MAINTAINER horky@d3s.mff.cuni.cz
+LABEL maintainer="horky@d3s.mff.cuni.cz"
 
 # Install some interactive utilities (for debugging)
 RUN dnf install -y mc vim

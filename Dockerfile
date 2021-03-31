@@ -10,6 +10,8 @@ LABEL maintainer="horky@d3s.mff.cuni.cz"
 RUN dnf install -y mc vim \
     && dnf install -y python3 python3-pip pylint python3-virtualenv \
     && dnf install -y git ShellCheck bats jq make pandoc bc findutils wget \
-    && dnf clean all
+    && dnf clean all \
+    && mkdir -p /srv/nswi177/ \
+    && curl --silent https://raw.githubusercontent.com/lavakin/lavakin.github.io/main/pdfs/fasta.fa >/srv/nswi177/arabidopsis.fasta
 
 CMD echo "Run with -it /bin/bash and proper volume mounted"

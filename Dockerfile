@@ -12,6 +12,7 @@ RUN dnf install -y mc vim \
     && dnf install -y git ShellCheck bats jq make pandoc bc findutils wget \
     && dnf clean all \
     && mkdir -p /srv/nswi177/ \
+    && curl --silent https://raw.githubusercontent.com/d-iii-s/docker-mffd3s-nswi177-base/main/machines.status >/srv/nswi177/machine.status \
     && curl --silent https://raw.githubusercontent.com/lavakin/lavakin.github.io/main/pdfs/fasta.fa >/srv/nswi177/arabidopsis.fasta
 
 CMD echo "Run with -it /bin/bash and proper volume mounted"

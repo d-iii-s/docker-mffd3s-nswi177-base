@@ -1,0 +1,10 @@
+bravo.example.d3s.mff.cuni.cz:Incremental backups:3
+alpha.example.d3s.mff.cuni.cz:E-mail server:0
+bravo.example.d3s.mff.cuni.cz:Backup e-mail server:1
+yankee.example.d3s.mff.cuni.cz:Web server:0
+zulu.example.d3s.mff.cuni.cz:GitLab server:0
+alpha.example.d3s.mff.cuni.cz:System is up-to-date:0
+zulu.example.d3s.mff.cuni.cz:System is up-to-date:0
+yankee.example.d3s.mff.cuni.cz:System is up-to-date:1
+zulu.example.d3s.mff.cuni.cz:Incremental backups:0
+alpha.example.d3s.mff.cuni.cz:Incremental backups:0

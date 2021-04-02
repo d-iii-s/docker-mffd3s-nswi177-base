@@ -9,7 +9,7 @@ LABEL maintainer="horky@d3s.mff.cuni.cz"
 #  - developer tools
 RUN dnf install -y mc vim \
     && dnf install -y python3 python3-pip pylint python3-virtualenv \
-    && dnf install -y git ShellCheck bats jq make pandoc bc findutils wget \
+    && dnf install -y git ShellCheck bats jq make pandoc bc findutils wget file \
     && dnf clean all \
     && mkdir -p /srv/nswi177/ \
     && curl --silent https://raw.githubusercontent.com/d-iii-s/docker-mffd3s-nswi177-base/main/machines.status >/srv/nswi177/machine.status \

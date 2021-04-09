@@ -13,6 +13,8 @@ RUN dnf install -y mc vim \
     && dnf clean all \
     && mkdir -p /srv/nswi177/ \
     && curl --silent https://raw.githubusercontent.com/d-iii-s/docker-mffd3s-nswi177-base/main/machines.status >/srv/nswi177/machine.status \
+    && curl --silent https://raw.githubusercontent.com/d-iii-s/docker-mffd3s-nswi177-base/main/hurricane.jpg >/srv/nswi177/hurricane.jpg \
+    && curl --silent https://raw.githubusercontent.com/d-iii-s/docker-mffd3s-nswi177-base/main/flanders.pdf >/srv/nswi177/flanders.pdf \
     && curl --silent https://raw.githubusercontent.com/lavakin/lavakin.github.io/main/pdfs/fasta.fa >/srv/nswi177/arabidopsis.fasta
 
 CMD echo "Run with -it /bin/bash and proper volume mounted"

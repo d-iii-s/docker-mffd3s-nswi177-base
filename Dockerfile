@@ -9,7 +9,7 @@ LABEL maintainer="horky@d3s.mff.cuni.cz"
 #  - developer tools
 RUN dnf install -y mc vim \
     && dnf install -y python3 python3-pip pylint python3-virtualenv \
-    && dnf install -y git ShellCheck bats jq make pandoc bc findutils wget file \
+    && dnf install -y git ShellCheck bats jq yajl make pandoc bc findutils wget file \
     && dnf install -y perl-Image-ExifTool poppler-utils ImageMagick \
     && dnf clean all \
     && mkdir -p /srv/nswi177/ \
